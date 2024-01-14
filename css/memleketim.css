@@ -1,0 +1,177 @@
+/*! Tüm ayarları sıfırla */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/*! Üst Menü */
+
+nav.ust-menu {
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 0px;
+  padding: 2rem;
+  z-index: 100;
+  width: 100%;
+  height: 30;
+  font-size: medium;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav.ust-menu a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+nav.ust-menu a:hover {
+  color: crimson;
+  font-weight: 600;
+  /* text-decoration: underline; */
+}
+
+nav ul li .aktif {
+  color: #ff652f;
+  font-weight: 700;
+}
+
+/*! Ana İçerik Bölümü */
+
+/* Alt Menu */
+nav.alt-menu {
+  margin-top: 2rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: sticky;
+  top: 80px;
+  width: 100%;
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+}
+nav.alt-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+nav.alt-menu a:hover {
+  text-decoration: underline;
+}
+
+/* Kart Yapısı */
+main .kart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: larger;
+}
+
+main .kart article {
+  flex: 1;
+  text-align: justify;
+}
+
+main .kart img {
+  width: 100%;
+}
+
+main .kart:nth-child(odd) {
+  flex-direction: row;
+}
+
+main .kart:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Galeri Bölümü */
+.galeri-bolumu {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galeri {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.galeri article {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 900px;
+}
+.galeri img {
+  width: 100%;
+}
+
+.galeri article p {
+  padding: 5px;
+  text-align: center;
+}
+
+/* Alt bilgi */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
+}
+footer iframe {
+  width: 100%;
+  height: 100%;
+}

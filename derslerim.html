@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/derslerim.css" />
+    <title>Derslerim</title>
+  </head>
+  <body>
+    <!-- Üst menü -->
+    <nav>
+      <ul>
+        <li><a href="anasayfa.html">Ana Sayfa</a></li>
+        <li><a href="memleketim.html">Memleketim</a></li>
+        <li><a class="aktif" href="derslerim.html">Derslerim</a></li>
+        <li><a href="ilgi-alanim.html">İlgi Alanlanım</a></li>
+        <li><a href="iletisim.html">İletişim Formu</a></li>
+      </ul>
+    </nav>
+
+    <!-- Derslerim İçerik -->
+    <main class="derslerim-icerik">
+      <section class="kart">
+        <article>
+          <h1>ASP .NET Nedir?</h1>
+          <p>
+            Asp.net Microsoft tarafından geliştirilen dinamik web sayfaları ve
+            Web servisleri oluşturulmak için kullanılan teknolojidir. Asp.net
+            .Net Framework alt kümesidir. Html ile statik sayfalar tasarlamak
+            yerine kullanıcı etkileşimli sürekli yenilenebilen yönetilebilen
+            dinamik sayfalar oluşturmamızı sağlar. Asp.net aslında bir dil değil
+            çatıdır. C# ve VB.Net’ten herhangi birini bilmek Asp.net ile proje
+            geliştirmemiz için yeteri olacaktır.
+          </p>
+        </article>
+        <article>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BsqPR0viMaM?si=eDFTtnIAfOJMC7ub"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+      <section class="kart">
+        <article>
+          <h1>ASP .NET Proje Oluşturma ve Web Form</h1>
+          <p>
+            Web formların uzantısı Active Server Pages Extended kısaltması olan
+            .aspx’ tir. Web formun (code behind)arka tarafında ise c# için
+            aspx.cs uzantısı vardır. Dizayn sayfası ile code behind sayfası
+            arasındaki ilişkiyi ise dizayn sayfasında @Page ile sağlanır. <%@
+            Page Title=”Home Page” Language=”C#” MasterPageFile=”~/Site.Master”
+            AutoEventWireup=”true” CodeBehind=”Default.aspx.cs”
+            Inherits=”WebApplication1._Default” %> Yeni proje eklemek için: File
+            -> New Project seçeneğinden yeni Projemizi açabiliriz.
+            (Ctrl+Shift+N)
+          </p>
+        </article>
+        <article>
+          <img src="./resimler/derslerim/asp1.png" alt="" />
+        </article>
+      </section>
+      <section class="kart">
+        <article>
+          <p>
+            Web formların uzantısı Active Server Pages Extended Templates
+            seçeneği altında Uygulamayı geliştireceğimiz dili seçiyoruz. Visual
+            C# sağ tarafta ise ASP.NET Web Application seçili olması gerekli.
+          </p>
+        </article>
+        <article>
+          <img src="./resimler/derslerim/asp2.png" alt="" />
+        </article>
+      </section>
+      <section class="kart">
+        <article>
+          <p>
+            Projeyi açtıktan sonra sağ tarafta Solution Explorer altında
+            projemiz ile ilgili dosyaları görebiliriz. Solution Explorer kapalı
+            ise View -> Solution Explorer (Ctrl + Alt + L) ile açabiliriz.
+          </p>
+        </article>
+        <article>
+          <img src="./resimler/derslerim/asp3.png" alt="" />
+        </article>
+      </section>
+      <section class="kart">
+        <article>
+          <p>
+            Solution Explorer : Çözüm altında birden fazla projemiz bulunabilir.
+            Bunun için Solution Explorer sağ tıklayarak Add -> New Project
+            seçeneğinden yeni bir proje ekleyebiliriz.
+          </p>
+        </article>
+        <article>
+          <img src="./resimler/derslerim/asp4.png" alt="asp4" />
+        </article>
+      </section>
+      <section class="kart">
+        <article>
+          <p>
+            İkinci projeyi ekledikten projeye sağ tıklayıp Set StartUp Project
+            seçeneğinden başlangıç projesini değiştirebiliriz. F5 kısa yolu ile
+            ilk projemizi çalıştırıp tarayıcı üzerinde görüntüleyebiliriz.
+          </p>
+        </article>
+        <article>
+          <img src="./resimler/derslerim/asp5.png" alt="asp4" />
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>
+        ASP .NET hakkında daha fazla bilgi edeinmek için şu dosyayı
+        <a href="./belgeler/AspNet_1.pptx">indiriniz.</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+/*? RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Zilla Slab", serif;
+  /* font-family: "Michroma", sans-serif; */
+  /* font-family: "Russo One", sans-serif; */
+  /* line-height: 1.9rem; */
+  color: whitesmoke;
+  background: #000;
+}
+
+/*! Üst menü CSS */
+nav.ust-menu {
+  font-size: large;
+  color: white;
+  background-color: #1f1f1f;
+  background-image: linear-gradient(100deg, #1f1f1f 80%, #1f1f1f 80%);
+  position: fixed;
+  top: 0px;
+  padding: 2rem;
+  z-index: 100;
+  width: 100%;
+  height: 30;
+}
+nav.ust-menu ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav.ust-menu a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+nav.ust-menu a:hover {
+  color: crimson;
+  font-weight: 600;
+  /* text-decoration: underline; */
+}
+
+nav.ust-menu ul li .aktif {
+  color: #ff652f;
+  font-weight: 700;
+}
+
+/*! NOT: Aşağıdaki kodları kursta yapmış olduğum parallax web sistesi projesinden ekledim. Class isimlendirmede BEM notasyonunu kullandım ve İngilizce isimlendirme yaptım.  */
+
+/*?.............. HEADER CONTAINER ............. */
+
+.header-container__banner {
+  background-image: url("../resimler/ilgi-alanim/wp2641689-msi-gaming-wallpapers.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: bisque;
+  width: 100%;
+  height: 80%;
+}
+
+.header-container__nvidia-title {
+  position: absolute;
+  bottom: 28vh;
+  left: 35vw;
+  font-size: 3rem;
+}
+
+/*?............... SECTIONS ...............*/
+
+.section-rtx4090-gaming-bgimg {
+  background-image: url("../resimler/ilgi-alanim/wp2641696-msi-gaming-wallpapers.png");
+}
+
+.section-rtx4090-gaming,
+.section-rtx4090-suprim,
+.section-rtx3090-gaming,
+.section-rtx3090-suprim {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.section-rtx4090-gaming__left-content--rtx4090-img,
+.section-rtx4090-suprim__left-content--rtx4090-img,
+.section-rtx3090-gaming__left-content--rtx3090-img,
+.section-rtx3090-suprim__left-content--rtx3090-img {
+  width: 450px;
+  padding: 2rem;
+}
+
+.section-rtx4090-gaming__right-content,
+.section-rtx4090-suprim__right-content,
+.section-rtx3090-gaming__right-content,
+.section-rtx3090-suprim__right-content {
+  padding: 1rem;
+  color: wheat;
+  font-size: 1.2rem;
+}
+
+.section-rtx4090-gaming__right-content--links,
+.section-rtx4090-suprim__right-content--links,
+.section-rtx3090-gaming__right-content--links,
+.section-rtx3090-suprim__right-content--links {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.section-rtx4090-suprim-bgimg {
+  background-image: url("../resimler/ilgi-alanim/wp2641696-msi-gaming-wallpapers.png");
+  height: 80%;
+}
+
+.section-rtx3090-gaming-bgimg {
+  background-image: url("../resimler/ilgi-alanim/wp3093568-msi-gaming-wallpapers.jpg");
+  height: 80%;
+}
+
+.section-rtx3090-suprim-bgimg {
+  background-image: url("../resimler/ilgi-alanim/MSI-RTX40-2.jpg");
+  height: 80%;
+}
+
+.section-end-bgimg {
+  background-image: url("../resimler/ilgi-alanim/RXPE5a0-msi-gaming-wallpapers.jpg");
+  height: 100%;
+}
+
+.section-end-bgimg {
+  position: relative;
+}
+
+.section-end-bgimg__copyright {
+  position: absolute;
+  bottom: 5vh;
+  left: 30vw;
+  font-size: 1.2rem;
+}
+
+/*?........ GENERAL CLASSES................  */
+
+nav > ol > li > a {
+  text-decoration: none;
+  padding: 0.5rem;
+  color: bisque;
+  font-size: 1.2rem;
+}
+
+nav > ol > li > a:hover {
+  color: #ed1c24;
+}
+
+.sections {
+  height: 90%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+article h2 {
+  margin-bottom: 1rem;
+}
+
+article h3 {
+  margin-top: 1rem;
+}
+
+.article-list {
+  list-style-position: inside;
+  list-style-image: url("./images/bolt-lightning-solid.svg");
+}
+
+article a {
+  padding: 0.3rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: darkgrey;
+}
+
+article a:hover {
+  color: #ed1c24;
+}

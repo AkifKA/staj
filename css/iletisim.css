@@ -1,0 +1,139 @@
+/* Bütün ayarları sıfırla */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Üst Menü */
+
+nav {
+  background: #2b5876; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4e4376,
+    #2b5876
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 0px;
+  padding: 2rem;
+  z-index: 100;
+  width: 100%;
+  height: 30;
+  font-size: medium;
+  color: white;
+  display: flex;
+  justify-content: end;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s;
+}
+
+nav a:hover {
+  color: crimson;
+  font-weight: 600;
+  /* text-decoration: underline; */
+}
+
+nav ul li .aktif {
+  color: #ff652f;
+  font-weight: 700;
+}
+
+/* İletişim İçerik Bölümü */
+
+.iletisim-icerik {
+  margin-top: 5rem;
+}
+.iletisim-icerik h1 {
+  text-align: center;
+}
+
+/* Form Bölümü */
+form {
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  width: fit-content;
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+}
+
+.dil-bolumu,
+.cinsiyet-bolumu {
+  display: inline-block;
+}
+
+.dil-bolumu label,
+.cinsiyet-bolumu label {
+  width: auto;
+  margin-right: 10px;
+}
+
+.inputlar {
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.buton-bolumu {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.buton-bolumu input {
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(204, 36%, 34%);
+  padding: 10px;
+}
+.buton-bolumu input:hover {
+  background-color: hsl(204, 36%, 40%);
+  color: aliceblue;
+  font-weight: 700;
+  cursor: pointer;
+}
+.input-div {
+  margin-bottom: 20px;
+}
+
+textarea {
+  vertical-align: middle;
+  resize: none;
+}

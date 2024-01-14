@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/iletisim.css" />
+    <title>İletişim</title>
+  </head>
+  <body>
+    <!-- Üst menü -->
+    <nav>
+      <ul>
+        <li><a href="anasayfa.html">Ana Sayfa</a></li>
+        <li><a href="memleketim.html">Memleketim</a></li>
+        <li><a href="derslerim.html">Derslerim</a></li>
+        <li><a href="ilgi-alanim.html">İlgi Alanım</a></li>
+        <li><a class="aktif" href="iletisim.html">İletişim Formu</a></li>
+      </ul>
+    </nav>
+
+    <!-- İletişim İçerik -->
+    <section class="iletisim-icerik">
+      <h1>İLETİŞİM FORMU</h1>
+      <form action="">
+        <div class="input-div">
+          <label for="ad">Ad</label>
+          <input
+            class="inputlar"
+            type="text"
+            name="ad"
+            id="ad"
+            placeholder="Adınızı giriniz."
+            required
+          />
+        </div>
+
+        <div class="input-div">
+          <label for="soyad">Soyad</label>
+          <input
+            class="inputlar"
+            type="text"
+            name="soyad"
+            id="soyad"
+            placeholder="Soyadınızı giriniz."
+            required
+          />
+        </div>
+
+        <div class="input-div">
+          <label for="email">Email</label>
+          <input
+            class="inputlar"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Mailinizi giriniz."
+            required
+          />
+        </div>
+
+        <div class="input-div">
+          <label for="dogum-tarihi">Doğum Tarihi</label>
+          <input
+            class="inputlar"
+            type="date"
+            name="dob"
+            id="dob"
+            min="2020-01-01"
+            value="2022-01-01"
+            placeholder="Doğum tarihinizi giriniz."
+            required
+          />
+        </div>
+
+        <div class="input-div">
+          <label for="telefon">Telefon</label>
+          <input
+            class="inputlar"
+            type="tel"
+            name="telefon"
+            id="telefon"
+            placeholder="Telefon numaranızı giriniz"
+            required
+          />
+        </div>
+
+        <div class="input-div">
+          <label for="adres">Adres</label>
+          <textarea
+            class="inputlar"
+            name="adres"
+            id="adres"
+            cols="20"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div class="input-div">
+          <label for="ulke">Ülke</label>
+          <select class="inputlar" name="ulke" id="ulke">
+            <option value="">Ülke Seçiniz</option>
+            <option value="Türkiye">Türkiye</option>
+            <option value="Almanya">Almanya</option>
+            <option value="ABD">ABD</option>
+            <option value="Britanya">Britanya</option>
+          </select>
+        </div>
+
+        <div class="input-div">
+          <label for="cinsiyet">Cinsiyet</label>
+
+          <div class="cinsiyet-bolumu">
+            <input type="radio" name="cinsiyet" id="erkek" checked />
+            <label for="erkek">Erkek</label>
+            <input type="radio" name="cinsiyet" id="kadin" />
+            <label for="kadin">Kadın</label>
+          </div>
+        </div>
+
+        <div class="input-div">
+          <label for="diller">Diller</label>
+          <div class="dil-bolumu">
+            <input type="checkbox" name="dil" id="türkce" checked />
+            <label for="türkçe">Türkçe</label>
+
+            <input
+              class="radio-check"
+              type="checkbox"
+              name="dil"
+              id="english"
+            />
+            <label for="english">English</label>
+            <input type="checkbox" name="dil" id="français" />
+            <label for="français">Français</label>
+          </div>
+        </div>
+
+        <div class="buton-bolumu">
+          <input type="submit" value="Gönder" />
+          <input type="reset" value="Temizle" />
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
